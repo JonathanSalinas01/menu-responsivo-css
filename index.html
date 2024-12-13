@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/style.css">
     <script src="https://kit.fontawesome.com/f8cc79aff1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
     <title>Menu responsivo</title>
 </head>
+
 <body>
     <header>
         <nav>
             <div class="container">
-                <ul>
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="http://www.youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a></li>
-                    <li><a href="https://www.gog.com" target="_blank" rel="noopener noreferrer">GoG</a></li>
-                    <li><a href="https://store.steampowered.com" target="_blank">Steam</a></li>
-                    <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <ul class="menu">
+                    <li><a class="link" href="">Inicio</a></li>
+                    <li><a class="link" href="http://www.youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+                    <li><a class="link" href="https://www.gog.com" target="_blank" rel="noopener noreferrer">GoG</a></li>
+                    <li><a class="link" href="https://store.steampowered.com" target="_blank">Steam</a></li>
                 </ul>
+                <div class="buscador">
+                    <i class="fa-solid fa-magnifying-glass lupa"></i>
+                    <input type="text" placeholder="Buscar">
+                </div>
             </div>
         </nav>
     </header>
 </body>
+
 </html>
