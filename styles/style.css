@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: "Lato", sans-serif;
@@ -6,16 +6,47 @@ body{
     font-style: normal;
 }
 
-.container{
+.mobile {
+    display: none;
+    background-color: black;
+    height: 4em;
+    width: 100%;
+    position: relative;
+}
+
+.hamMenu {
+    color: white;
+    font-size: 2em;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ .menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 4em;
+    right: 0;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+}
+
+.container {
     background-color: black;
     height: 4em;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
-.menu{
+.menu {
     display: flex;
     list-style: none;
     flex-wrap: wrap;
@@ -23,14 +54,60 @@ body{
     align-items: center;
 }
 
-.buscador{
+.buscador {
     color: white;
     margin-right: 1em;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.buscador input {
+    padding: 0.5em;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
 }
 
 
-.link{
+.link {
     color: white;
     margin-left: 1em;
     text-decoration: none;
+}
+
+.link:hover {
+    background-color: white;
+    color: black;
+}
+
+@media(max-width: 600px) {
+    .container {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+        position: relative;
+    }
+
+    .menu{
+        display: none;
+        width: 100%;
+    }
+
+    .menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu li a {
+        padding: 1em;
+        display: block;
+        width: 100%;
+    }
+
 }
